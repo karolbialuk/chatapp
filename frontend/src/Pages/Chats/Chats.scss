@@ -1,0 +1,228 @@
+.chats{
+    width: 100%;
+
+::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #25256ee1;
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+  ::-webkit-scrollbar-horizontal {
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(76, 175, 80, 0.3);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-track:horizontal {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+   
+
+    & &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        gap: 20px;
+
+
+    }
+
+    & &__search-bar-container{
+        width: 100%;
+        position: relative;
+    }
+
+    & &__search-bar{
+        // background: red;
+        height: 6%;
+        
+
+        input{
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            height: 45px;
+            
+        }
+    }
+
+    & &__search-bar-icon{
+        position: absolute;
+        top: 12px;
+        right: 10px;
+        font-size: 1.5rem;
+    }
+    
+
+    & &__groups{
+        background: linear-gradient(145deg, #c4c2c2, #e9e6e6);
+        box-shadow:  8px 8px 16px #b9b7b7,
+                 -8px -8px 16px #fbf7f7;
+        border-radius: 10px;
+        height: 34%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        h3{
+            margin-bottom: 5px;
+            
+        }
+    }
+
+    & &__gropus-container{
+        width: 90%;
+        overflow: auto;
+
+        
+    }
+
+    & &__element{
+        border-bottom: 1px solid rgba(133, 133, 133, 0.486);
+        padding: 8px 0;
+        display: flex;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+       
+    }
+
+    & &__img{
+        width: 40px;
+        height: 40px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+            object-position: center;
+            border-radius: 50px;
+        }
+    }
+
+    & &__addfriend-btn{
+        display: flex;
+        gap: 5px;
+
+        button{
+            border: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            cursor: pointer;
+            background: rgb(255, 99, 99);
+
+            &:nth-child(1){
+                background: rgb(98, 243, 98);
+            }
+        }
+    }
+
+
+    & &__addfriend-icon{
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    & &__img-container{
+    }
+
+    & &__info{
+        width: 45%;
+        h3{
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        p{
+            margin: 0;
+            font-size: 0.8rem;
+        }
+    }
+
+    & &__info2{
+        width: 40%;
+        justify-content: flex-end;
+        display: flex;
+        p{
+            margin: 0;
+            font-size: 0.7rem;
+            color: #2b2a2ace;
+        }
+    }
+
+   
+
+    & &__people{
+        min-width: 150px;
+        background: linear-gradient(145deg, #c4c2c2, #e9e6e6);
+        box-shadow:  8px 8px 16px #b9b7b7,
+                 -8px -8px 16px #fbf7f7;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        
+
+        h3{
+            margin-bottom: 5px;
+            
+        }
+    }
+    
+
+    & &__people-container{
+        width: 90%;
+        overflow: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .chats{
+        & &__element{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .chats{
+        h3{
+            font-size: 0.8rem;
+        }
+        & &__img{
+            display: none;
+        }
+
+        & &__info{
+            width: 100%;
+            h3{
+                font-size: 0.8rem;
+            }
+        }
+
+        & &__info2{
+            justify-content: center;
+         }
+    }
+}

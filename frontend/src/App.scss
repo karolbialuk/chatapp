@@ -1,0 +1,22 @@
+.app{
+    background-image: linear-gradient(to right bottom, #101011, #121213, #141415, #151617, #171819, #191a1b, #1b1c1e, #1d1e20, #202123, #232427, #26262b, #29292e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    & &__container{
+        background: #dbdbdb;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        height: 80vh;
+        -webkit-box-shadow: 8px 8px 24px -3px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 8px 8px 24px -3px rgba(0, 0, 0, 1);
+        box-shadow: 8px 8px 24px -3px rgba(0, 0, 0, 1);
+    }
+}
